@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="css/css.css">
+
+	<meta charset="UTF-8">
+	<title>Home</title>
+</head>
+<body class="body__1">
+	<aside>
+		<nav class="hamburger">								<!-- Nav ist so verschachtelt da immer nur eine <nav> sichtbar ist, entweder .hampre oder .hampost -->
+			<nav class="hampre" tabindex="0">
+				<i></i>
+				<i></i>
+				<i></i>
+			</nav>
+			<nav class="hampost" style="display: none;">
+				<ul>
+					<li><a href="#" class="curr">Home</a></li>
+					<li><a href="#">About us</a></li>
+					<li><a href="#">The team</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+				<div class="warn">Unavailable in this Preview!<br>:/ sorry about that</div>
+			</nav>
+		</nav>
+	</aside>
+	<aside class="ad">
+		<div onclick="this.parentNode.remove()" class="closead">close X</div>
+		<iframe src="html/bannerindex.html"></iframe>
+	</aside>
+	<main>
+		<div class="animcontainer">
+			<object class="animlogo" data="html/logoindex.html"></object>
+			<object data="assets/logo.svg" class="h1__1"></object>
+		</div>
+		<div class="h2__1">
+			<blockquote>“What i like about photographs is that they capture a moment that’s gone forever, impossible to reproduce.”<br><i>-Karl Lagerfeld</i></blockquote>
+			<blockquote>“The camera is an instrument that teaches people how to see without a camera.”<br><i>-Dorothea Lange</i></blockquote>
+			<blockquote>“There are no bad pictures; that's just how your face looks sometimes.” <br><i>-Abraham Lincoln</i></blockquote>
+			<blockquote>“The whole point of taking pictures is so that you don’t have to explain things with words.”  <br><i>-Elliott Erwitt</i></blockquote>
+			<blockquote>“A photograph can be an instant of life captured for eternity that will never cease looking back at you.”  <br><i>-Brigitte Bardot</i></blockquote>
+			<blockquote>“There is one thing the photograph must contain, the humanity of the moment.”<br><i>-Robert Frank</i></blockquote>
+			<blockquote>“In photography there is a reality so subtle that it becomes more real than reality.”<br><i>-Alfred Stieglitz</i></blockquote>
+			<blockquote>“Taking pictures is like tiptoeing into the kitchen late at night and stealing Oreo cookies.”<br><i>-Diane Arbus</i></blockquote>
+		</div>
+		<nav class="slider">
+			<ul>
+				<li data-direction="left">&lt;</li>			<!-- data tag ist in html5 valide -->
+				<li data-direction="right">&gt;</li>		<!-- data tag ist in html5 valide -->
+			</ul>
+		</nav>
+		<div class="bgwrapper">
+			<div><img src="assets/1.png" alt="bg"></div>
+			<div><img src="assets/2.png" alt="bg"></div>
+			<div><img src="assets/3.png" alt="bg"></div>
+			<div><img src="assets/4.jpg" alt="bg"></div>
+			<div><img src="assets/5.jpg" alt="bg"></div>
+			<div><img src="assets/6.jpg" alt="bg"></div>
+			<div><img src="assets/7.jpg" alt="bg"></div>
+		</div>
+	</main>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		(function($, undefined){
+			$(document).ready(function(){
+				$(".hampre").trigger("click");
+				$("iframe").click(function(){remove(this)})
+			})
+		})(jQuery)
+	</script>
+	<!-- <script> -->
+		<!-- document.querySelector(".ad").addEventListener("click", document.querySelector(".ad>*").remove()) -->
+	<!-- </script> -->
+
+	<script src="js/ham.js"></script>
+	<script src="js/slider.js"></script>
+
+</body>
+</html>

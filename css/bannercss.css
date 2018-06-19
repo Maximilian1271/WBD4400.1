@@ -1,0 +1,67 @@
+*{
+	box-sizing: border-box;
+}
+html,body{
+	margin: 0;
+	padding: 0;
+	width: 452px;
+	height: 177px;
+	/*background-color: lightgrey;*/
+}
+.main {
+	background: url('../assets/sprites-min.png') no-repeat 0 0;
+	width: 452px;
+	height: 177px;
+	position: relative;
+	overflow: hidden;
+	/*margin: 0 auto;*/
+	/*top: 25vh;*/
+	z-index: 1000;
+	border-radius: 13px;
+}
+.logo {
+	background: url('../assets/sprites-min.png') no-repeat -165px -370px;
+	width: 121px;
+	height: 97px;
+	position: absolute;
+	transform: translate(50%, 41%);
+	left: 100%
+}
+.bg {
+	background: url('../assets/sprites-min.png') no-repeat -228px -184px;
+	width: 225px;
+	height: 177px;
+	position: absolute;
+	right: 0px;
+	opacity: 0
+}
+.text1{
+	background: url('../assets/sprites-min.png') no-repeat -474px -44px;
+	width: 394px;
+	height: 95px;
+	position: absolute;
+	transform: translate(-50%, 70%);
+	left: 150%;
+	opacity: 0
+}
+.text2 {
+	background: url('../assets/sprites-min.png') no-repeat -474px -238px;
+	width: 402px;
+	height: 72px;
+	position: absolute;
+	transform: translate(-50%, 84.3%);
+	left: 150%;
+	opacity: 0
+}
+.dot {
+	width: 8px;
+	height: 8px;
+	transform: translate(-50%, -50%) scale(1.2);
+	position: absolute;
+    top: 33px;
+    left: 19px;
+    opacity: 0
+}
+.img{
+	z-index: -1
+}

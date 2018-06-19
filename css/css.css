@@ -1,0 +1,96 @@
+/*@import url("https://use.typekit.net/fbm3top.css");*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400');
+*{font-family:"Open Sans",sans-serif;font-style:normal;font-weight:100;text-rendering:optimizeLegibility;}
+h2{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;text-transform:capitalize;}
+main{top:0;left:0;width:100vw;height:100vh;position:absolute;transition-duration:.5s;}
+.hamclose{height:54px;position:absolute;top:4px;left:3px;}
+.bgwrapper{position:fixed;top:0;z-index:-20;display:flex;}
+.bgwrapper>div>img{height:100vh;width:100vw;}
+.body__1{background-size:auto;margin:0;padding:0;}
+.h1__1{height:72px;}
+.primary{font-style:normal;color:#02dfb4;}
+.h2__1{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;margin:0 auto;z-index:10;position:relative;top:185px;font-size:1.5rem;color:hsl(0,0%,75%);width:485px;height:auto;}
+.h2__1:hover *{cursor:none;opacity:0;transition-duration:.4s}
+.h2__1 *{transition-duration:.4s}
+.h2__1>blockquote>i{font-style:italic;float:right}
+blockquote{display:none;margin:0;}
+/*experimental ham*/
+.hampre{position:relative;background-image:none;}
+.hampre.*{width:24px;height:2px;display:block;background-color:white;position:absolute;left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);transition:all .3s ease;}
+.hampre i:nth-child(1){top:35%;}
+.hampre i:nth-child(3){top:65%;}
+.hampre.active i:nth-child(1){-webkit-transform:translate(-50%,-50%) rotate(135deg);transform:translate(-50%,-50%) rotate(135deg);background-color:#02dfb4;top:50%;}
+.hampre.active i:nth-child(2){opacity:0;}
+.hampre.active i:nth-child(3){-webkit-transform:translate(-50%,-50%) rotate(-135deg);transform:translate(-50%,-50%) rotate(-135deg);background-color:#02dfb4;top:50%;}
+.hampre{cursor:pointer;width:60px;height:60px;z-index:6;position:fixed;left:30px;top:30px;background-color:rgba(0,0,0,.5);border-radius:100%;}
+.hampre i{width:36px;height:4px;display:block;background-color:white;position:absolute;left:50%;top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);transition:all .3s ease;}
+.hampost{position:fixed;top:0;left:-100%;width:25vw;height:100%;background-color:rgba(0,0,0,.5);color:white;list-style-type:none;font-size:1.6875rem;z-index:5;}
+.hampost>ul{left:2.2vw;top:17vh;position:relative;line-height:27px;list-style-type:none;}
+.hampost>ul>li:not(:first-child){margin:22px 0;}
+.hampost li{text-transform:capitalize;}
+.hampost a{color:inherit;text-decoration:none;}
+.slider>ul{position:absolute;top:50vh;font-size:50px;color:white;margin:0;padding:0;width:100%;justify-content:space-between;list-style-type:none;display:flex;}
+.slider>ul>*{margin:0 50px;cursor:pointer;}
+.curr:before{position:absolute;left:1em;content:"\00B7";}
+@media screen and (max-width:500px){
+	.h1__1{font-size:calc(4.5rem/2);transition-duration:.4s}
+	.h2__1{font-size:calc(1.5rem/1.5);width:50%;transition-duration:.4s}
+	.slider>ul>*{margin:0;transition-duration:.4s}
+	.hampre{transition-duration:.4s;-webkit-transform:scale(0.8);transform:scale(0.8);}
+	.hampost{font-size:calc(1.6875rem*0.5);}
+	.hampost>ul{left:initial;padding-left:20px}
+}
+.curr{font-weight:400;}
+.animlogo{
+    height: 90px;
+    width: 104.583px;
+    transform: scale(1.1)
+}
+.animcontainer{
+	margin-top: 17vh;
+	text-align: center;
+}
+.ad>*{
+	position: fixed;
+	bottom: 10px;
+	width: 452px;
+	height: 177px;
+	left: 50vw;
+    transform: translateX(-50%);
+}
+iframe{
+	border: none;
+}
+.hampost{
+	transition: background-color .5s, visibility .5s;
+}
+.hampost:hover{
+	background-color: #ffffffd4;
+	background-size: cover;
+}
+.hampost:hover .warn{
+	visibility: visible;
+}
+.hampost .warn{
+	visibility: hidden;
+	text-align: center;
+	margin-top: 25vh;
+	color: red;
+}
+.hampost a{
+	user-select: none;
+	cursor: not-allowed;
+}
+.hampre:focus{
+	outline:none;
+}
+.closead{
+	font-family: sans-serif;
+	font-size: 10px;
+	height: 20px;
+    z-index: 5;
+    width: auto;
+    bottom: 165px;
+    margin-left: 200px;
+    cursor: pointer;
+}
