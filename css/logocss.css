@@ -15,7 +15,6 @@
 	position: absolute;
 	top: 150%;
 	left: 50%;
-	mask: url(#myMask);
 }
 #circle_1_{
 	fill: #02DFB4;
