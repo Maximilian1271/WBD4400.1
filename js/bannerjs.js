@@ -13,18 +13,18 @@ window.onload=function(){
 
 	timeline
 	.to(".logo", .9, {left: "23.5%", ease: Expo.easeOut}, "p1") // x: -(452/2),
-	.to(".dot", 1, {opacity:1}, "p1+=2")
+	.to(".dot", 1, {autoAlpha:1}, "p1+=2")
 	.to(".dot", .2, {scale: 100}, "p2")
-	.to(".dot", 1.5, {opacity: 0}, "p2+=.5")
+	.to(".dot", 1.5, {autoAlpha: 0}, "p2+=.5")
 	.to(".logo", 1, {scale: .25, x:-133, y:-18, ease: Expo.easeOut})
-	.to(".bg", .5, {opacity: 1})
+	.to(".bg", .5, {autoAlpha: 1})
 	.add(function(){texthandler.play()})										//Startet Text timeline
 
 	texthandler
-	.to(".text1", 1, {left:"50%", opacity: 1, ease: Power2.easeOut}, "p3")
-	.to(".text1", 3, {opacity: 0}, "p3+=5")
-	.to(".text2", 1, {left:"50%", opacity: 1, ease: Power2.easeOut}, "p4")
-	.to(".text2", 3, {opacity: 0}, "p4+=5")
-	.set(".text1", {left: "initial", opacity: "initial"})
-	.set(".text2", {left: "initial", opacity: "initial"})
+	.to(".text1", 1, {left:"50%", autoAlpha: 1, ease: Power2.easeOut}, "p3")
+	.to(".text1", 3, {autoAlpha: 0}, "p3+=5")
+	.to(".text2", 1, {left:"50%", autoAlpha: 1, ease: Power2.easeOut}, "p4")
+	.to(".text2", 3, {autoAlpha: 0}, "p4+=5")
+	.set(".text1", {left: "initial", autoAlpha: "initial"})
+	.set(".text2", {left: "initial", autoAlpha: "initial"})
 }

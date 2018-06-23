@@ -82,7 +82,7 @@ iframe{
 	cursor: not-allowed;
 }
 .hampre:focus{
-	outline:none;
+	/*outline:none;*/
 }
 .closead{
 	font-family: sans-serif;
