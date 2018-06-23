@@ -44,7 +44,8 @@ blockquote{display:none;margin:0;}
 .animlogo{
     height: 90px;
     width: 104.583px;
-    transform: scale(1.1)
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1)
 }
 .animcontainer{
 	margin-top: 17vh;
@@ -56,7 +57,8 @@ blockquote{display:none;margin:0;}
 	width: 452px;
 	height: 177px;
 	left: 50vw;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
 }
 iframe{
 	border: none;
@@ -78,7 +80,10 @@ iframe{
 	color: red;
 }
 .hampost a{
-	user-select: none;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
 	cursor: not-allowed;
 }
 .hampre:focus{
